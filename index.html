@@ -1,0 +1,74 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color scheme switcher</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        #colorTheme{
+            display: flex;
+            list-style: none;
+            margin-left:200px ;
+            margin-top: 50px;
+            margin-bottom: 80px;
+            
+        }
+        div ul li{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            border: 1px solid black;
+            margin: 15px;
+
+
+        }
+        body{
+            height: 1000px;
+            border: 1px solid whitesmoke;
+            padding-top: 100px;
+        }
+        #blue{
+            background-color: blue;
+        }
+        #green{
+            background-color:green;
+        }
+        #red{
+            background-color:red;
+        }
+        #whitesmoke{
+            background-color:whitesmoke;
+        }
+        .head{
+            margin-left: 150px;
+            margin-top: 50px;
+        }
+        h3{
+            margin-left: 200px;
+        }
+        .sent{
+            margin-left: 230px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <h2 class=" text-center display-3 head"> Color Scheme Switcher</h2>
+        </div>
+        <div class="row">
+            <ul id ="colorTheme">
+                <li id ="blue" class="round"></li>
+                <li id ="green" class="round"></li>
+                <li id ="red" class="round"></li>
+                <li id ="whitesmoke" class="round"></li>
+            </ul>
+        </div>
+                <h3 class="sent">Try clicking on one of the colors above</h3>
+            <h3>to change the background color of this page!</h3>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
